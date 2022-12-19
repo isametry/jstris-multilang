@@ -15,9 +15,9 @@
             <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
-    <tr><td><a href="#">game</a></td><td>96.89%</td><td>
+    <tr><td><a href="#">game</a></td><td>100%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 96.89%;"></span>
+            <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
     <tr><td><a href="#">supporter</a></td><td>98.21%</td><td>
@@ -33,19 +33,6 @@
 </tbody></table>
 
 -----------------------
-
-## Game
-
-**Missing in cs/game.php:**
-
-```
-'skin' => 'Skin',
-'skin2' => 'Block skin',
-'guestRooms' => 'Guest rooms',
-'bots' => 'Bots',
-'rulesets' => 'Rulesets',
-'solidGarbageSpeed' => 'Solid g. speed',
-```
 
 ## Supporter
 
