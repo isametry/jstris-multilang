@@ -25,20 +25,12 @@
             <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
-    <tr><td><a href="#">web</a></td><td>99.42%</td><td>
+    <tr><td><a href="#">web</a></td><td>100%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 99.42%;"></span>
+            <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
 </tbody></table>
 
 -----------------------
-
-## Web
-
-**Missing in cs/web.php:**
-
-```
-'mostGames' => 'The most games',
-```
 
