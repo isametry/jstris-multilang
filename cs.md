@@ -20,9 +20,9 @@
             <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
-    <tr><td><a href="#">supporter</a></td><td>98.21%</td><td>
+    <tr><td><a href="#">supporter</a></td><td>100%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 98.21%;"></span>
+            <span class="pb-fill" style="width: 100%;"></span>
         </div>
     </td></tr>
     <tr><td><a href="#">web</a></td><td>99.42%</td><td>
@@ -33,14 +33,6 @@
 </tbody></table>
 
 -----------------------
-
-## Supporter
-
-**Missing in cs/supporter.php:**
-
-```
-'supportUs' => 'Support Us',
-```
 
 ## Web
 
