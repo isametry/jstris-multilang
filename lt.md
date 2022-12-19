@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="style.css">
 
-# ga - coverage report
+# lt - coverage report
 
 <table>
 <thead>
@@ -10,14 +10,14 @@
     </tr>
 </thead>
 <tbody>
-    <tr><td><a href="#">frontend</a></td><td>50.94%</td><td>
+    <tr><td><a href="#">frontend</a></td><td>26.42%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 50.94%;"></span>
+            <span class="pb-fill" style="width: 26.42%;"></span>
         </div>
     </td></tr>
-    <tr><td><a href="#">game</a></td><td>49.22%</td><td>
+    <tr><td><a href="#">game</a></td><td>47.67%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 49.22%;"></span>
+            <span class="pb-fill" style="width: 47.67%;"></span>
         </div>
     </td></tr>
     <tr><td><a href="#">supporter</a></td><td>0%</td><td>
@@ -25,9 +25,9 @@
             <span class="pb-fill" style="width: 0%;"></span>
         </div>
     </td></tr>
-    <tr><td><a href="#">web</a></td><td>43.86%</td><td>
+    <tr><td><a href="#">web</a></td><td>70.76%</td><td>
         <div class="pb">
-            <span class="pb-fill" style="width: 43.86%;"></span>
+            <span class="pb-fill" style="width: 70.76%;"></span>
         </div>
     </td></tr>
 </tbody></table>
@@ -36,17 +36,78 @@
 
 ## Frontend
 
-**Missing in ga/frontend.php:**
+**Missing in lt/frontend.php:**
 
 ```
-'slowDown' => 'SLOW DOWN',
-'speedLimitIs' => 'The speed limit is',
-'connecting' => 'Connecting...',
-'signingIn' => 'Signing in',
-'loginFail' => 'Log in failed!',
-'loginFail2' => 'Not logged in! You\'re playing as a guest called {name}.',
+'notFocused' => 'Out of focus',
+'clickToFocus' => 'Click here to focus the game',
+'specMode' => 'Spectator mode',
+'specModeInfo' => 'You are in spectator mode now.',
+'endSpec' => 'Type /play to join the game',
+'typeHelp' => 'Type /help for available commands.',
+'st' => 'st',
+'nd' => 'nd',
+'rd' => 'rd',
+'th' => 'th',
+'notPlaying' => 'Not playing',
+'pressStart' => 'Press \'New game\' to start',
 'mapLoading' => 'Map loading...',
+'warning' => 'Warning',
+'inactive1' => 'Spectator mode will be activated. Type in chat to abort.',
+'inactive2' => 'Inactivity detected, next inactive game will activate spectator mode.',
+'nickFill' => 'Type your username to be able to chat!',
+'setButton' => 'Set',
+'sendButton' => 'Send',
+'rNameReq' => 'Room name must be filled!',
+'newsUser' => 'News',
+'serverUser' => 'Server',
+'noNamed' => 'NoNamed',
+'watching' => 'Watching',
+'userJoined' => 'joined the room',
+'joined' => 'joined',
+'userCame' => 'came to watch',
+'isSpectating' => 'is now spectating',
+'spectator' => 'Spectator',
+'hasLeft' => 'has left',
+'signedAs' => 'You are signed in as',
+'welcome' => 'Welcome,',
+'welcomeIn' => 'Welcome in',
+'noSpectators' => 'No one is watching right now.',
+'replayAvailable' => 'Replay available at',
+'oldVer' => 'You have an old version, use CTRL+F5 to reload to the new version!',
 'oldVer2' => 'You still have the old version! Use {key} to reload your client',
+'privateRoom' => 'This is your private room where you won\'t be disturbed while playing. Check the Lobby to see public rooms.',
+'restartInfo' => 'Restart by F4 or set a custom key.',
+'joinLinkInfo' => 'This room is private. Only way someone can join it is using this link:',
+'received' => 'Received',
+'finesse' => 'Finesse',
+'sent' => 'Sent',
+'ren' => 'REN',
+'warning2' => 'WARNING',
+'connected' => 'Connected',
+'client' => 'client',
+'notConnected' => 'NOT CONNECTED',
+'connLost' => 'Connection lost!',
+'lastGame' => 'Last game:',
+'roomSettings' => 'Room settings:',
+'attack' => 'Attack',
+'combo' => 'Combo',
+'solid' => 'Solid',
+'clear' => 'Clear',
+'mode' => 'Mode',
+'garbage' => 'Garbage',
+'garbageDelay' => 'GarbageDelay',
+'messiness' => 'Messiness',
+'replay' => 'Replay',
+'rep' => 'Rep',
+'rec' => 'Rec.',
+'enterNullDAS' => 'Enter numeric NullpoMino DAS value:',
+'suggestedIs' => 'Suggested DAS is',
+'applyConfirm' => 'Apply?',
+'invalidDAS' => 'DAS value is invalid, was not changed!',
+'settingsChanged' => 'Settings changed during the game. Replay invalidated.',
+'segment' => 'Segment',
+'duration' => 'Duration',
 'roomFull' => 'It seems the room is full.',
 'lobbyInfo' => 'This chat is shared with {discord}.',
 'newHost' => 'You are now the host of this room.',
@@ -85,29 +146,9 @@
 'nsLowPC' => 'Record not saved, at least 2 Perfect Clears needed.',
 'noBlocks' => 'Out of blocks',
 'noBlocks2' => 'All blocks were used',
-'noPlayers' => 'No players',
-'cntMore' => '{cnt} more',
-'cntGuests' => '{cnt} guests',
-'cntSpec' => '{cnt} spectating',
-'joinPossible' => 'Join possible',
-'notEligible' => 'Not eligible',
-'gTimeShort' => 'G.time',
-'on' => 'On',
-'off' => 'Off',
-'fr' => 'Friends',
-'frLoad' => 'Loading friend list',
-'frLogin' => 'Log in first to use friend list',
-'frEmpty' => 'Friend list is empty',
-'frHowAdd' => 'Visit user\'s profile to send friend request.',
-'frPriv' => 'Private',
-'frIn' => 'Already in!',
-'frChat' => 'Open chat',
-'frRel' => 'Reload',
-'frMsgTo' => 'Message to {name}',
 'frInv' => 'Send room invite',
 'frInvTo' => 'Invite to join {room}',
 'frInvIn' => 'You are already in!',
-'frInvBy' => 'by {user}',
 'frOn' => 'ONLINE',
 'frOff' => 'OFFLINE',
 'frNewChatH' => 'This is the beginning of chat history with {name}.',
@@ -115,26 +156,26 @@
 'frIntro' => 'In this area you can access a list of online friends, private chats, and room invites',
 'frIntro2' => 'To send a friend request, visit a user\'s profile',
 'frIntro3' => 'To manage friends, visit the {frPage}',
-'frPage' => 'Friends page',
-'frIntroCl' => 'Close intro',
 ```
 
 ## Game
 
-**Missing in ga/game.php:**
+**Missing in lt/game.php:**
 
 ```
-'skin' => 'Skin',
-'skin2' => 'Block skin',
+'gameControlsInfo' => 'Click on a text box and press the key you want.',
 'touchBtn' => 'Enable on-screen control buttons',
 'touchBtnMove' => 'Allow position adjustment by dragging',
+'DAS' => 'DAS',
 'ARR' => 'ARR',
-'sound' => 'Sound',
-'monochrome' => 'Monochrome',
-'enableVSE' => 'Voice comments',
-'rotateSE' => 'Sound effect of block rotation',
-'DMsound' => 'Direct message notification',
-'SEvol' => 'SE volume',
+'grid' => 'Grid',
+'ghost' => 'Ghost',
+'sprintReset' => 'Sprint reset',
+'or' => 'or',
+'finFault' => 'Finesse fault',
+'altResetKeyInfo' => 'Choose an alternative key to reset a sprint game.',
+'gameReset' => 'Game reset',
+'altLiveResetKeyInfo' => 'Choose an alternative key to reset a live game.',
 'rescaleNow' => 'Resize multiplayer fields immediately',
 'rescaleNowInfo' => 'If unchecked fields of new players will appear next round',
 'DAScancel' => 'DAS cancellation',
@@ -145,16 +186,19 @@
 'webGLInfo' => 'Disable this if you aren\'t able to render OpenGL in :year',
 'mLay' => 'Use mobile layout',
 'mLayInfo' => 'Change to override mobile detection, requires refresh',
-'trem' => 'time remaining',
+'cheese' => 'Cheese race',
+'freePlay' => 'Free play',
 'tsdsCounter' => 'TSDs done',
 'pcCounter' => 'Perfect Clears',
-'score' => 'Score',
+'toRestart' => 'to restart',
+'lobby' => 'Lobby',
+'sent' => 'Sent',
+'received' => 'Received',
+'PPS' => 'PPS',
+'APM' => 'APM',
 'KPP' => 'KPP',
-'editRoom' => 'Edit',
-'usePreset' => 'Use preset',
+'finesse' => 'Finesse',
 'default' => 'Default',
-'defaultDesc' => 'The default settings',
-'otherOptions' => 'Other options',
 'customPreset' => 'Use custom preset',
 'browsePresets' => 'Browse custom presets',
 'submitPreset' => 'Submit a new one',
@@ -163,8 +207,17 @@
 'overflowRooms' => 'Overflow rooms',
 'guestRooms' => 'Guest rooms',
 'spectateRooms' => 'Spectate only rooms',
+'gmodeStandard' => 'Standard',
+'gmodeCheese' => 'Cheese',
 'gmodeTeam' => 'Team',
-'applyCh' => 'Apply changes',
+'isPrivate' => 'Private',
+'simple' => 'Simple',
+'advanced' => 'Advanced',
+'moreSett' => 'More settings',
+'attack' => 'Attack',
+'gDist' => 'Garbage distribution',
+'hdThread' => 'HardDrop thread',
+'chatSend' => 'Send',
 'survival' => 'Survival',
 'mapDownstack' => 'Map downstack',
 'ultra' => 'Ultra',
@@ -176,22 +229,11 @@
 'preset' => 'Preset',
 'audioCredits' => 'Audio Assets by',
 'fullScreen' => 'Full screen',
-'showHoldQueue' => 'Show H+Q',
-'showStats' => 'Show stats',
 'roomLimits' => 'Room join limits',
 'setLimitsInfo' => 'You can set requirements for players joining your room. Leave a field empty for no limit.',
 'addLimit' => 'Add join limit',
-'s40L' => 'Sprint 40L',
-'accGametime' => 'Gametime',
-'applyClose' => 'Apply & Close',
 'teamSel' => 'Team selection',
 'myTeam' => 'Playing for',
-'seconds' => 'seconds',
-'minutes' => 'minutes',
-'hours' => 'hours',
-'ms' => 'ms',
-'s' => 's',
-'hrs' => 'hrs',
 'attackTable' => 'Attack table',
 'comboTable' => 'Combo attack',
 'gBlocking' => 'Garbage blocking',
@@ -226,7 +268,7 @@
 
 ## Supporter
 
-**Missing in ga/supporter.php:**
+**Missing in lt/supporter.php:**
 
 ```
 'donate' => 'Donate',
@@ -289,83 +331,49 @@
 
 ## Web
 
-**Missing in ga/web.php:**
+**Missing in lt/web.php:**
 
 ```
 'maps' => 'Maps',
-'mapsBrowse' => 'Browse',
 'myMaps' => 'My maps',
 'mapsDesigner' => 'Map Designer',
 'randomMap' => 'Random map',
-'mapsLatestGames' => 'Latest games',
-'guide' => 'Guide',
 'favReplays' => 'Favorite replays',
-'friends' => 'Friends',
+'PPS' => 'PPS',
+'finesse' => 'Finesse',
+'replay' => 'Replay',
+'bestSubs' => 'Best subs',
 'perfectFinesse' => '0 finesse',
-'mostGames' => 'The most games',
-'lines' => 'Lines',
 'scoringPlaylist' => 'Scoring playlist',
 'filterSP' => 'Filter scoring playlist',
-'applyFilter' => 'Apply filter',
-'timestamp' => 'Timestamp',
 'action' => 'Action',
 'scoreEq' => 'Score equivalent',
-'position' => 'Position',
 'lAVG' => 'Local average',
 'gAVG' => 'Global average',
-'repHelp' => 'Help',
-'repExport' => 'GIF or video',
-'localSettings' => 'Localization settings',
-'lang' => 'Language',
-'langNone' => 'None (selectable in the top menu)',
-'langDesc' => 'Select the preferred language.',
-'timezone' => 'Timezone',
-'timezoneDesc' => 'Used to convert time into your local time.',
-'country' => 'Country',
-'continent' => 'Continent',
-'countryDesc' => 'Used to display per-country leader boards.',
-'userRanking' => 'Ranking stats',
-'blockCnt' => ':cnt blocks',
+'againPw' => 'Again',
+'linesSent' => 'Lines sent',
+'linesRec' => 'Lines received',
 'APM10Games' => '10-games APM',
 'PPS10Games' => '10-games PPS',
+'totalB2B' => 'Total B2Bs',
+'mostSent' => 'Most sent',
 'createdMaps' => 'Created maps',
 'viewMapsBy' => 'View all maps created by',
-'playersCount' => 'Players',
-'gameResultPosition' => 'Position',
-'gameResultRoundTime' => 'Gametime',
-'viewAllGamesOf' => 'All games of :mode',
-'noGamesOf' => ':name hasn\'t played any games of :mode yet.',
 'map' => 'Map',
-'mapCreate' => 'Create new',
-'mapName' => 'Name',
-'mapNameLong' => 'Map name',
-'mapDesc' => 'Description',
-'mapRules' => 'Rules',
-'mapOptions' => 'Options',
-'mapPlay' => 'Play',
 'mapPlayLink' => 'Play Map',
-'mapAuthor' => 'Author',
-'mapCreatedBy' => 'Created by',
 'backToMaps' => 'Back to maps',
 'playThisMap' => 'Play this map',
-'search' => 'Search',
 'mapsByUser' => ':name\'s maps',
 'displayUnpublished' => 'Display :cnt unpublished maps',
 'displayPublished' => 'Display :cnt published maps',
 'usersMapMedals' => ':name\'s map medals',
 'usersCompletedMaps' => ':name\'s completed maps',
-'showRecords' => 'Show records',
-'details' => 'Details',
-'playedBy' => 'Played by',
 'latestMapGames' => 'The latest map games',
-'changelog' => 'Changelog',
-'translators' => 'Translators',
-'moderators' => 'Moderators',
+'improvementInfo' => 'The following graph shows line race time (Y axis) vs game date (X axis). Highlighted line shows improvements in :name\'s personal records. You can place your cursor over any point to show the game details.',
+'qSettings' => 'Query settings',
+'serverCoverage' => 'Server cost coverage',
+'invalidLink' => 'Requested link is invalid.',
 'wasteDesc' => 'Ratio of T pieces not used in a T-Spin (to total T pieces)',
-'setOther' => 'Other options',
-'hideAcc' => 'Hidden account',
-'accVisibility' => 'Visibility',
-'hideAccInfo' => 'If enabled, the account will be excluded from public leaderboards.',
 'reportU' => 'Report user',
 'reportDesc' => ' Here you can create a report if you think someone has abused the game chat.',
 'user' => 'User',
@@ -376,17 +384,5 @@
 'rr3' => 'Harassment or bullying',
 'rr4' => 'Other (specify)',
 'sendReport' => 'Send report',
-'accept' => 'Accept',
-'ignore' => 'Ignore',
-'pending' => 'Pending Requests',
-'frFilter' => 'Filter Names',
-'noPending' => 'At the moment you have no pending friend requests.',
-'onlineNow' => 'Online now',
-'recentlyAc' => 'Recently active',
-'lastActive' => 'Active :when',
-'noFriends' => 'At the moment your friend list is empty.',
-'ruSure' => 'Are you sure?',
-'rmFriend' => 'Do you want to remove this person from your friend list?',
-'rmConfirm' => 'Yes, remove',
 ```
 

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="style.css">
 
-# zh-TW - coverage report
+# el - coverage report
 
 <table>
 <thead>
@@ -36,7 +36,7 @@
 
 ## Game
 
-**Missing in zh-TW/game.php:**
+**Missing in el/game.php:**
 
 ```
 'skin' => 'Skin',
@@ -49,7 +49,7 @@
 
 ## Supporter
 
-**Missing in zh-TW/supporter.php:**
+**Missing in el/supporter.php:**
 
 ```
 'supportUs' => 'Support Us',
@@ -57,7 +57,7 @@
 
 ## Web
 
-**Missing in zh-TW/web.php:**
+**Missing in el/web.php:**
 
 ```
 'mostGames' => 'The most games',
